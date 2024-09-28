@@ -1,6 +1,7 @@
 FROM python:3.11.9
 
 COPY ./app /app
+COPY requirements.txt requirements.txt
 WORKDIR /app
 
 RUN pip install -r requirements.txt
